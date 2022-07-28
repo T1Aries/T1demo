@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .clearfix::after{
+                display: block;
+                content: "";
+                clear: both;
+            }
+
+            ul{
+                list-style: none;
+            }
+            li{
+                list-style: none;
+            }
+
+            a{
+                text-decoration: none;
+                font-size: 23px;
+                display: block;
+                height: 30px;
+                width: 200px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            nav ul.Menu1{
+                float: left;
+                width: 1000px;
+                height: 30px;
+                position: relative;
+            }
+
+            ul.Menu2{
+                position: absolute;
+                background-color: azure;
+                top: 30px;
+                left: 0;
+                display: none;
+            }
+
+            ul.Menu2 > li{
+                position: relative;
+            }
+
+            ul.Menu4{
+                position: absolute;
+                left: 0;
+                top: 60px;
+                background-color: pink;
+                display: none;
+            }
+
+            ul.Menu1 > li:hover ul.Menu4{
+                display: block;
+            }
+
+            ul.Menu1 > li:hover ul.Menu2{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ngô Tùng Dương </h1>
+        <img src="hoa.jpg">
+        <nav>
+            <li>
+                <a href="websitle.html">Trang Chủ</a>
+            </li>
+            <ul class="Menu1 clearfix">
+                <li>
+                    <a href="">Kho Panel</a>
+                    <ul class="Menu2 clearfix">
+                        <li>
+                            <a href="">Panel Thường</a>
+                        </li>
+                        <li>
+                            <a href="">Panel Vip</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Preset</a>
+                    <ul class="Menu4 clearfix">
+                        <li>
+                            <a href="">Preset Han Quoc</a>
+                        </li>
+                        <li>
+                            <a href="">Preset Trung Quoc</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="tel:0336523680">Số Điện Thoại: 0336.523.680</a>
+                </li>
+                <br>
+                <li>
+                    <a href="mailto:duongngo210320@gmail.com">Mail: duongngo210320@gmail.com</a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
